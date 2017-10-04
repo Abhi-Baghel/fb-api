@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width , initial-scale =1.0">
+  <title> Facebook API </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!--fontawesome lib-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--css file-->
+  <link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<body>
+
+  <!--navbar-->
+ <nav class="navbar navbar-fixed-top navbar-inverse navbar-custom">
+   <div class="container-fluid">
+       <div class="navbar-header">
+             <a class="navbar-brand" href="https://www.facebook.com/">facebook</a>
+       </div>
+       <button type="button" id="logout_button" class="btn btn-primary">logout</button>
+   </div>
+ </nav>
+ 
+ <!--Front Section API for User-->
+ <div id="main_heading" class="jumbotron text-center container-fluid col-sm-12">
+  <div class="text-center">
+    <h1>FACEBOOK API</h1>
+  </div>
+  <form>
+    <div class="input-group" style="padding : 10px"">
+        <input type="text" class="form-control" id="accesstoken" size="20" placeholder="Enter Facebook Access token here">
+      </div>
+        <div>
+           <button type="button"  id="logbtn" class="btn btn-primary">LOGIN</button>
+           
+        </div>
+    <!--</div>-->
+  </form>
+</div><!--jumbotron end-->
+     <div id="Basic_Profile" class="container-fluid container-custom">
+     <div class="row">
+
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            Name - <span id="myName"></span>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            ID - <span id="myEmail"></span>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            HomeTown - <span id="myHomeTown"></span>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            Age-Range - <span id="myAge"></span>
+          </div>     
+        
+     </div>
+   </div><!--Basic_Profile-->
+    
+     <div id="getPost" class="container-fluid container-custom">
+      <p class="text-center">Click on the button to get the recent posts.
+        <button type="button"  id="postbtn" class="btn btn-primary">POST</button>
+      </p>
+       
+     </div>
+     
+      <!--Fb post-->
+     <div id="Postfb" class="container-fluid container-custom post">
+      <div class="row">
+          <div class="col-md-12">
+             Post - <span id="RecentPost"></span>
+          </div>
+      </div>
+     </div>
+   </div><!--Fb post-->
+
+
+<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="javascripts/app1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

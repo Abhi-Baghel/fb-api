@@ -1,0 +1,20 @@
+html,body{
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  nav{
+    padding: 1em 1em;
+  }
+  .navbar-custom{
+    color: blue;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #000080;
+  }
+    .container-custom{
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 50px 15px;
+    background: linear-gradient(to bottom, rgba(107,186,112,1) 0%,rgba(107,186,112,1) 100%);
+  }
